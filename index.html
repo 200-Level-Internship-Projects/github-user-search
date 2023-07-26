@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">devfinder</div>
+            <div class="theme-switch">
+                <p class="theme-name">Dark</p>
+                <div class="theme-icon">
+                    <img src="./images/moon.svg" alt="moon-icon">
+                </div>
+            </div>
+        </header>
+        <div class="search-container">
+            <div class="search-icon">
+                <img src="./images/search-light.svg" alt="search-icon">
+            </div>
+            <div class="search-input">
+                <input type="text" placeholder="Search Github username...">
+            </div>
+            <div class="search-error"></div>
+            <div class="search-button">
+                <input type="submit" value="Search">
+            </div>
+        </div>
+        <main>
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="./images/profile-img.svg" alt="profile-img">
+                </div>
+                <div class="profile-details">
+                    <h1 class="profile-name">The Octocat</h1>
+                    <p class="profile-tag">@octocat</p>
+                    <p class="profile-date">Joined 25 Jan 2011</p>
+                </div>
+            </div>
+            <p class="bio">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>
+            <div class="stats">
+                <div class="repo">
+                    <h2>Repo</h2>
+                    <div class="repo-num">8</div>
+                </div>
+                <div class="followers">
+                    <h2>Followers</h2>
+                    <div class="followers-num">3938</div>
+                </div>
+                <div class="following">
+                    <h2>Following</h2>
+                    <div class="following-num">9</div>
+                </div>
+            </div>
+            <div></div>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

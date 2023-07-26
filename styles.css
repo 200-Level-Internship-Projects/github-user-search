@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Space Mono', monospace;
+    background-color: #F6F8FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.logo{
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #222731;
+}
+.theme-switch{
+    display: flex;
+    gap: 10px;
+}
+.theme-name{
+    text-transform: uppercase;
+    color: #4B6A9B;
+    font-size: 1rem
+}
+
+.theme-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.theme-icon img{
+    height: 100%;
+    width: 100%;
+}
+
+.search-container{
+    width: 90%;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    background-color: #FEFEFE;
+}
+.search-icon{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+
+.search-icon img{
+    height: 100%;
+    width: 100%;
+}
+
+.search-input{
+    width: 70%;
+}
+
+.search-input input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: #4B6A9B;
+    line-height: 25px;
+}
+
+.search-input input:focus{
+    outline: none;
+}
+
+.search-input input::placeholder{
+    color: #4B6A9B;
+    font-family: 'Space Mono', monospace;
+}
+
+.search-button{
+    display: flex;
+    background-color: #0079FF;
+    height: 100%;
+    width: 25%;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    justify-self: end;
+    flex-shrink: 0;
+}
+
+.search-button input{
+    background-color: #0079FF;
+    color: #FEFEFE;
+    border: none;
+    outline: none;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    color: #FEFEFE;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: normal;
+}
+
+main{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    background-color: #FEFEFE;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+
+.profile-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.profile-details{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 5px;
+}
+
+.profile-details .profile-name{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #2B3442;
+}
+
+.profile-details .profile-tag{
+    font-weight: 400;
+    color: #0079FF;
+    font-size: 0.8rem;
+}
+
+.profile-name .profile-date{
+    font-weight: 400;
+    color: #697C9A;
+    font-size: 0.8rem;
+}
+
+.bio{
+    color: #697C9A;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 1.5rem;
+    width: 100%;
+    word-spacing: 3px;
+}
+
+.stats{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #F6F8FF;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #4B6A9B;
+    margin-bottom: 10px;
+}
+
+.repo, .followers, .following > div{
+    color: #2B3442;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
