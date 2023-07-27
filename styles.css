@@ -193,7 +193,7 @@ main{
 
 .bio{
     color: #697C9A;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
     margin-top: 40px;
     line-height: 1.5rem;
@@ -256,7 +256,7 @@ h2{
 }
 
 .contact-info{
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #4B6A9B;
     text-decoration: none;
 }
