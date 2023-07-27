@@ -100,7 +100,7 @@ header{
 .search-input input::placeholder{
     color: #4B6A9B;
     font-family: 'Space Mono', monospace;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .search-button{
@@ -193,7 +193,7 @@ main{
 
 .bio{
     color: #697C9A;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 400;
     margin-top: 40px;
     line-height: 1.5rem;
@@ -246,8 +246,8 @@ h2{
 }
 
 .contact-icon{
-    width: 30px;
-    height: 30px;
+    width: 23px;
+    height: 23px;
 }
 
 .contact-icon img{
