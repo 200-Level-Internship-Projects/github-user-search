@@ -233,7 +233,7 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: left;
-    gap: 10px;
+    gap: 20px;
     width: 100%;
     height: auto;
     padding: 20px;
@@ -245,8 +245,8 @@ h2{
 }
 
 .contact-icon{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 .contact-icon img{
@@ -255,7 +255,7 @@ h2{
 }
 
 .contact-info{
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #4B6A9B;
     text-decoration: none;
 }
