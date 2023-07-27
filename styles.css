@@ -59,7 +59,7 @@ header{
 
 .search-container{
     width: 90%;
-    height: 60px;
+    height: 70px;
     border-radius: 15px;
     display: flex;
     padding: 8px;
@@ -88,7 +88,7 @@ header{
     border: none;
     outline: none;
     padding: 10px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #4B6A9B;
     line-height: 25px;
 }
@@ -100,6 +100,7 @@ header{
 .search-input input::placeholder{
     color: #4B6A9B;
     font-family: 'Space Mono', monospace;
+    font-size: 1rem;
 }
 
 .search-button{
@@ -157,7 +158,7 @@ main{
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .profile-img img{
@@ -194,7 +195,7 @@ main{
     color: #697C9A;
     font-size: 0.9rem;
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: 40px;
     line-height: 1.5rem;
     width: 100%;
     word-spacing: 3px;
