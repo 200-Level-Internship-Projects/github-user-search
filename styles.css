@@ -6,9 +6,32 @@
     box-sizing: border-box;
 }
 
+:root{
+    /* Light Mode Variables */
+    --bg-body: #F6F8FF;
+    --logo: #222731;
+    --text-bold: #2B3442;
+    --text-regular: #4B6A9B;
+    --text-light:#697C9A;
+    --blue:#0079FF;
+    --blue-hover: #60ABFF;
+    --bg-elements: #FEFEFE;
+    --error: #F74646;
+    
+}
+
+/* Dark Mode Variabes */
+.dark-theme{
+    --bg-body: #141D2F;
+    --logo: #FFFFFF;
+    --text-bold: #FFFFFF;
+    --bg-elements: #1E2A47;
+    --text-regular: #FFFFFF;
+}
+
 body{
     font-family: 'Space Mono', monospace;
-    background-color: #F6F8FF;
+    background-color: var(--bg-body);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +58,7 @@ header{
 .logo{
     font-weight: 700;
     font-size: 1.8rem;
-    color: #222731;
+    color: var(--logo);
 }
 .theme-switch{
     display: flex;
@@ -44,7 +67,7 @@ header{
 }
 .theme-name{
     text-transform: uppercase;
-    color: #4B6A9B;
+    color: var(--text-regular);
     font-size: 1rem
 }
 
@@ -65,8 +88,9 @@ header{
     display: flex;
     padding: 8px;
     align-items: center;
+    justify-content: space-between;
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
-    background-color: #FEFEFE;
+    background-color: var(--bg-elements);
 }
 .search-icon{
     height: 20px;
@@ -80,7 +104,8 @@ header{
 }
 
 .search-input{
-    width: 70%;
+    width: 72%;
+    background-color: var(--bg-elements);
 }
 
 .search-input input{
@@ -90,8 +115,9 @@ header{
     outline: none;
     padding: 10px;
     font-size: 1rem;
-    color: #4B6A9B;
+    color: var(--text-regular);
     line-height: 25px;
+    background-color: var(--bg-elements);
 }
 
 .search-input input:focus{
@@ -99,38 +125,40 @@ header{
 }
 
 .search-input input::placeholder{
-    color: #4B6A9B;
+    color: var(--text-regular);
     font-family: 'Space Mono', monospace;
     font-size: 0.8rem;
 }
 
 .search-button{
     display: flex;
-    background-color: #0079FF;
+    background-color: var(--blue);
     height: 100%;
     width: 25%;
     border-radius: 8px;
     cursor: pointer;
-    padding: 10px;
-    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
-    justify-self: end;
+    overflow: hidden;
     flex-shrink: 0;
 }
 
 .search-button input{
-    background-color: #0079FF;
-    color: #FEFEFE;
+    background-color: var(--blue);
+    color: #FFFFFF;
     border: none;
     outline: none;
     font-family: 'Space Mono', monospace;
     font-weight: 700;
     text-transform: capitalize;
     font-size: 0.9rem;
-    color: #FEFEFE;
     height: 100%;
     width: 100%;
     text-align: center;
     line-height: normal;
+    cursor: pointer;
+}
+
+.search-button > input:hover{
+    background-color: var(--blue-hover);
 }
 
 main{
@@ -141,7 +169,7 @@ main{
     align-items: center;
     padding: 20px;
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
-    background-color: #FEFEFE;
+    background-color: var(--bg-elements);
     border-radius: 15px;
     margin: 20px;
 }
@@ -177,56 +205,58 @@ main{
 .profile-details .profile-name{
     font-weight: 700;
     font-size: 1.2rem;
-    color: #2B3442;
+    color: var(--text-bold);
 }
 
 .profile-details .profile-tag{
     font-weight: 400;
-    color: #0079FF;
+    color: var(--blue);
     font-size: 0.8rem;
 }
 
-.profile-name .profile-date{
+.profile-date{
     font-weight: 400;
-    color: #697C9A;
+    color: var(--text-regular);
     font-size: 0.8rem;
 }
 
 .bio{
-    color: #697C9A;
+    color: var(--text-regular);
     font-size: 0.9rem;
     font-weight: 400;
     margin-top: 40px;
     line-height: 1.5rem;
     width: 100%;
     word-spacing: 3px;
+    opacity: 0.8;
 }
 
 .stats{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-around;
+    gap: 30px;
     margin-top: 20px;
     width: 100%;
     height: auto;
     padding: 20px;
     border-radius: 15px;
-    background-color: #F6F8FF;
+    background-color: var(--bg-body);
     margin-bottom: 20px;
     text-align: center;
+    padding: 20px;
 }
 
 h2{
     font-weight: 400;
     font-size: 0.9rem;
-    color: #4B6A9B;
+    color: var(--text-regular);
     margin-bottom: 10px;
 }
 
 .repo, .followers, .following > div{
-    color: #2B3442;
+    color: var(--text-bold);
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -258,6 +288,6 @@ h2{
 
 .contact-info{
     font-size: 0.8rem;
-    color: #4B6A9B;
+    color: var(--text-regular);
     text-decoration: none;
 }
