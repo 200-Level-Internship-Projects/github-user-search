@@ -36,7 +36,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 100vh;
+    height: auto;
     width: 100vw;
 }
 .container{
@@ -76,10 +76,12 @@ header{
     height: 20px;
 }
 
-.theme-icon img{
+.theme-icon > img{
     height: 100%;
     width: 100%;
+
 }
+
 
 .search-container{
     width: 90%;
@@ -103,21 +105,24 @@ header{
     width: 100%;
 }
 
+
 .search-input{
     width: 72%;
     background-color: var(--bg-elements);
 }
 
 .search-input input{
+    font-family: 'Space Mono', monospace;
     width: 100%;
     height: 100%;
     border: none;
     outline: none;
     padding: 10px;
     font-size: 1rem;
-    color: var(--text-regular);
+    color: var(--logo);
     line-height: 25px;
     background-color: var(--bg-elements);
+    padding-left: 20px;
 }
 
 .search-input input:focus{
@@ -166,7 +171,7 @@ main{
     height: auto;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 30px;
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
     background-color: var(--bg-elements);
     border-radius: 15px;
@@ -290,4 +295,196 @@ h2{
     font-size: 0.8rem;
     color: var(--text-regular);
     text-decoration: none;
+}
+
+.contact-details a:hover{
+    text-decoration: underline;
+}
+
+
+/* Tablet Design */
+@media (min-width: 768px) and (max-width: 1024px) {
+body{
+    justify-content: center;
+}
+
+header{
+    width: 75%;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.theme-name{
+    font-size: 1.2rem;
+}
+
+.theme-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.search-container{
+    width: 75%;
+    height: 80px;
+    border-radius: 20px;
+    padding: 12px;
+}
+
+.search-icon{
+    height: 30px;
+    width: 30px;
+}
+
+.search-input input{
+    font-size: 1.4rem;
+}
+
+.search-input input::placeholder{
+    font-size: 1.1rem;
+}
+
+.search-button{
+    border-radius: 12px;
+}
+
+.search-button input{
+    font-size: 1.3rem;
+}
+
+main{
+    width: 75%;
+    padding: 50px;
+}
+
+.profile{
+    gap: 30px;
+}
+
+.profile-img{
+    width: 150px;
+    height: 150px;
+}
+
+.profile-details .profile-name{
+    font-size: 2.2rem;
+}
+
+.profile-details .profile-tag{
+    font-size: 1.2rem;
+}
+
+.profile-date{
+    font-size: 1.2rem;
+}
+
+.bio{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    word-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.stats{
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+h2{
+    font-size: 1.2rem;
+}
+
+.repo,.followers,.following > div{
+    font-size: 2rem;
+}
+
+.contact{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0;
+}
+
+.contact-details{
+    width: 50%;
+}
+
+.twitter .building{
+    margin-bottom: 40px;
+}
+
+
+
+.contact-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.contact-info{
+    font-size: 1.2rem;
+}
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    body{
+        justify-content: center;
+    }
+
+    header{
+        width: 50%;
+    }
+
+    .search-container{
+        width: 50%;
+    }
+    main{
+        width: 50%;
+    }
+
+    .profile-details{
+        position: relative;
+        width: 90%;
+    }
+    
+    .profile-date{
+        position: absolute;
+        top: 0;
+        right: 50px;
+    }
+
+    .bio{
+        width: 80%;
+        align-self: flex-end;
+        margin-top: 0;
+    }
+
+    .stats{
+        width: 80%;
+        align-self: flex-end;
+        gap: 70px;
+        padding: 10px 0 10px 30px;
+        justify-content: flex-start;
+    }
+
+
+    .contact{
+        width: 80%;
+        align-self: flex-end;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .contact-details{
+        width: 50%;
+    }
+
+    .location ,  .link{
+        margin-bottom: 20px;
+    }
+
+
 }
