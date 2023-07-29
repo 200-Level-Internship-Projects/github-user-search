@@ -52,7 +52,24 @@ form.addEventListener("submit", (event) => {
 
         document.getElementById("organization").innerHTML = data.company;
 
-        document.getElementById("profile-date").innerHTML = data.created_at;
+        // document.getElementById("profile-date").innerHTML = data.created_at;
+        date = new Date(data.created_at);
+        year = date.getFullYear();
+        month = date.getMonth();
+        
+        const monthName = (month) => {
+            const months = [
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+            ];
+        
+            return months[month];
+        };
+        dt = date.getDate();
+        document.getElementById("profile-date").innerHTML = "Joined" + " " + dt + " " + monthName(month) + " " + year;
+
+
+
         document.getElementById("github").href = data.html_url;
         document.getElementById("github").innerHTML = data.html_url;
 
