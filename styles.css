@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 :root{
     /* Light Mode Variables */
     --bg-body: #F6F8FF;
@@ -295,6 +296,8 @@ h2{
     font-size: 0.8rem;
     color: var(--text-regular);
     text-decoration: none;
+    /* word-wrap: break-word;
+    overflow-wrap: break-word; */
 }
 
 .contact-details a:hover{
@@ -434,14 +437,35 @@ h2{
     }
 
     header{
-        width: 50%;
+        width: 60%;
     }
 
     .search-container{
-        width: 50%;
+        width: 60%;
     }
     main{
-        width: 50%;
+        width: 60%;
+    }
+
+    .profile{
+        gap: 15px;
+    }
+
+    .profile-img{
+        width: 130px;
+        height: 120px;
+    }
+
+    .profile-details .profile-name{
+        font-size: 2rem;
+    }
+    
+    .profile-details .profile-tag{
+        font-size: 1rem;
+    }
+    
+    .profile-date{
+        font-size: 1rem;
     }
 
     .profile-details{
@@ -473,18 +497,21 @@ h2{
     .contact{
         width: 80%;
         align-self: flex-end;
-        flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-between;
         gap: 0;
-    }
-
-    .contact-details{
-        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        padding: 10px;
     }
 
     .location ,  .link{
         margin-bottom: 20px;
+    }
+
+    .twitter{
+        opacity: 0.5;
     }
 
 

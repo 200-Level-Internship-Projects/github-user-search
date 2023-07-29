@@ -50,7 +50,7 @@ form.addEventListener("submit", (event) => {
 
         document.getElementById("location").innerHTML = data.location;
 
-        document.getElementById("organization").innerHTML = data.company;
+        
 
         // document.getElementById("profile-date").innerHTML = data.created_at;
         date = new Date(data.created_at);
@@ -75,12 +75,32 @@ form.addEventListener("submit", (event) => {
 
         if(data.twitter_url == null){
             document.getElementById("twitter").innerHTML = "Not Available";
-            document.getElementById("twitter").style.opacity = 0.5;
+            document.querySelector(".twitter").style.opacity = 0.5;
         }
         else{
             document.getElementById("twitter").innerHTML = data.twitter_url;
+            document.querySelector(".twitter").style.opacity = 1;
         }
-        
+
+
+        if(data.company == null){
+            document.getElementById("organization").innerHTML = "Not Available";
+            document.querySelector(".building").style.opacity = 0.5;
+        }
+        else{
+            document.getElementById("organization").innerHTML = data.company;
+            document.querySelector(".building").style.opacity = 1;
+        }
+
+
+        if(data.location == null){
+            document.getElementById("location").innerHTML = "Not Available";
+            document.querySelector(".location").style.opacity = 0.5;    
+        }
+        else{
+            document.getElementById("location").innerHTML = data.location;
+            document.querySelector(".location").style.opacity = 1; 
+        }
 
 
     })
