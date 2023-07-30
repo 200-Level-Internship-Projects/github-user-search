@@ -141,6 +141,7 @@ header{
     text-align: right;
     padding-right: 10px;
     color: var(--error);
+    font-size: 0.7rem;
     visibility: hidden;
 }
 
