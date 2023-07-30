@@ -108,7 +108,7 @@ header{
 
 
 .search-input{
-    width: 72%;
+    width: 50%;
     background-color: var(--bg-elements);
 }
 
@@ -134,6 +134,14 @@ header{
     color: var(--text-regular);
     font-family: 'Space Mono', monospace;
     font-size: 0.8rem;
+}
+
+.search-error{
+    width: 22%;
+    text-align: right;
+    padding-right: 10px;
+    color: var(--error);
+    visibility: hidden;
 }
 
 .search-button{
