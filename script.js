@@ -61,9 +61,6 @@ form.addEventListener("submit", (event) => {
 
             document.getElementById("location").innerHTML = data.location;
 
-            
-
-            // document.getElementById("profile-date").innerHTML = data.created_at;
             date = new Date(data.created_at);
             year = date.getFullYear();
             month = date.getMonth();
